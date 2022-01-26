@@ -1,0 +1,25 @@
+.yBackground {
+    background-color: yellow;
+    width: 500px;
+    height: 300px;
+}
+
+.topLeft, .bottomLeft, .topRight, .bottomeRight  {
+    background-color: blue;
+
+    height: 120px;
+    display: inline-block;
+}
+
+.topLeft, .bottomLeft {
+    width: 195px;
+    margin-right: 60px;
+}
+
+.topRight, .bottomeRight {
+    width: 240px;
+}
+
+.top {
+    margin-bottom: 60px;
+}
