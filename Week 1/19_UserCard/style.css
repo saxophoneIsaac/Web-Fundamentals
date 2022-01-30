@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 11pt;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    height: 70px;
+    background-color: rgb(13, 120, 163);
+}
+
+.circle {
+    height: 70px;
+    width: 70px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 50%;
+    position: relative;
+    left: 5px;
+    top: 32px;
+}
+
+#profileIcon {
+    height: 68px;
+    width: 68px;
+    position: relative;
+    left: 2px;
+}
+
+div.location {
+    display: flex;
+}
+
+.userCard {
+    width: 500px;
+    border: 3px solid grey;
+    margin-top: 20px;
+}
+
+.userCard h1, .userCard div, .userCard p {
+    margin-left: 18px;
+}
+
+.userCard h1 {
+    margin-top: 33px;
+    font-size: 26pt;
+}
+
+.location {
+    margin-top: 10px;
+    margin-bottom: 8pt;
+    display: flex;
+    vertical-align: middle;
+}
+
+#navIcon {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    bottom: 4px;
+}
+
+.location h2 {
+    font-size: 13pt;
+    font-weight: normal;
+    position: relative;
+    left: 7px;
+}
+
+.userCard p {
+    font-size: 11pt;
+    font-style: italic;
+    margin-bottom: 2px;
+}
+
+/* .userCard > p:last-child{
+    margin: 10px;
+    background-color: violet;
+} */
+
+
+.editProfile {
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+#gearIcon {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 3px;
+}
