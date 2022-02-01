@@ -1,37 +1,51 @@
-function isPal(arr) {
-    for(var left=0; left<arr.length/2; left++) {
-//                     if left if less than the halfway point, keep looping
-
-        var right = arr.length-1-left;
-//              if left = 0, then right = 4, etc etc. (dynamic relationship)
-//              left = 1, then right = 3
-
-
-        if(arr[left] != arr[right]) {
-        // if the left index of array
-        //        "is not equal" (!=)
-        //              to the right index of array
-
-            return "Not a pal-indrome!";
-            //breaks function
-        }
-    }
-
-
-    return "Pal-indrome!";
+function d6() {
+    var roll = Math.random();
+    roll = 6 * roll;
+    roll = Math.floor(roll) + 1;
+    return roll;
 }
 
-var result1 = isPal( [1, 1, 2, 2, 1] );
+var playerRoll = d6();
+console.log("The player rolled: " + playerRoll);
 
 
-console.log(result1);
-
-var result2 = isPal( [3, 2, 1, 1, 2, 3] );
-console.log(result2);
 
 
-// left = 0                             right = 4
-// conditional left > 5/2 (2.5)
-// 0 is < 2.5
-// right = 5 - 1 - 0 = 4
-//
+
+
+
+
+
+// Consult the Oracle
+
+
+var lifesAnswers = [
+    "It is certain.",
+    "It is decidedly so.",
+    "Without a doubt.",
+    "Yes – definitely.",
+    "You may rely on it.",
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
+];
+
+function fortuneTeller(answerArr) {
+    var randomSelection = Math.floor(answerArr.length * Math.random());
+    console.log(answerArr[randomSelection]);
+    return answerArr[randomSelection];
+}
+
+fortuneTeller(lifesAnswers);
