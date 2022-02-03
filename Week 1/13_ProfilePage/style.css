@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* outline: crimson dotted 3px; */
+}
+
+/* Navigation Bar */
+
+.topBar {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(49, 50, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar {
+    width: 820px;
+    margin: ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: honeydew;
+}
+
+.navBar-title {
+    font-size: 20pt;
+    margin-right: 6px;
+}
+
+.navBar-left {
+    display: flex;
+}
+
+.navBar-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navBar-links a {
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+}
+
+a.active {
+    color: honeydew;
+}
+
+.navBar-links li {
+    font-size: 11.25pt;
+    list-style: none;
+    margin-left: 24px;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-signOut {
+    font-size: 10.75pt;
+    height: 35px;
+    width: 100px;
+    color: white;
+    background-color: rgb(15, 77, 168);
+    box-shadow: 4px 4px black;
+}
+
+/* Main Content Layout */
+
+.container {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 11pt;
+    gap: 20px;
+}
+
+.col-1 {
+    flex: 2;
+}
+
+.col-2 {
+    flex: 1;
+}
+
+.col-1 > *, .col-2 > * {
+margin-top: 20px;
+}
+
+/* User Card */
+
+.userCard {
+    border: 3px solid grey;
+}
+
+.userCard-header {
+    height: 70px;
+    background-color: rgb(13, 120, 163);
+}
+
+.circle {
+    height: 70px;
+    width: 70px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 50%;
+    position: relative;
+    left: 5px;
+    top: 32px;
+}
+
+#profileIcon {
+    height: 68px;
+    width: 68px;
+    position: relative;
+    left: 20px;
+}
+
+.userCard h1, .location, .userCard p, .editProfile {
+    margin-left: 18px;
+}
+
+.userCard h1 {
+    margin-top: 33px;
+    font-size: 26pt;
+}
+
+.location {
+    margin-top: 10px;
+    margin-bottom: 8pt;
+    display: flex;
+    vertical-align: middle;
+}
+
+#navIcon {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    bottom: 4px;
+}
+
+.location h2 {
+    font-size: 13pt;
+    font-weight: normal;
+    position: relative;
+    left: 7px;
+}
+
+.userCard p {
+    font-size: 11pt;
+    font-style: italic;
+    margin-bottom: 2px;
+}
+
+.editProfile {
+    font-size: 10.8pt;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+#gearIcon {
+    height: 16px;
+    position: relative;
+    top: 3px;
+    margin-right: 4px;
+}
+
+
+/* Education Card */
+
+.educationCard {
+    border: 3px solid grey;
+}
+
+.educationCard-header {
+    height: 45px;
+    padding-left: 25px;
+    margin-bottom: 14px;
+    font-size: 14pt;
+    color: honeydew;
+    background-color: rgb(60, 63, 65);
+    display: flex;
+    align-items: center;
+}
+
+.educationCard h4, .educationCard h5, .educationCard p {
+    margin-left: 18px;
+}
+
+.educationCard h4 {
+    font-size: 17pt;
+
+}
+
+.educationCard h5 {
+    font-size: 12pt;
+    color: rgb(94, 93, 93);
+    margin-top: 4px;
+}
+
+.educationCard p {
+    font-size: 13pt;
+    margin-top: 9px;
+    margin-bottom: 11px;
+}
+
+/* Connections Cards (shared properties) */
+
+.connectionCards-header {
+    height: 60px;
+    padding-left: 15px;
+    margin-bottom: 14px;
+    font-size: 11.3pt;
+    font-weight: normal;
+    color: honeydew;
+    background-color: rgb(60, 63, 65);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.connectionRequestCard, .yourConnectionsCard, .connectionCards-footer {
+    border: 3px solid grey;
+}
+
+
+/* Individual Connection Block */
+
+.request, .aConnection {
+    margin-bottom: 10px;
+}
+
+/* Connection Name Font */
+
+.request p, .aConnection p {
+    font-size: 12.8pt;
+    font-weight: bold;
+    position: relative;
+    bottom: 9px;
+}
+
+/* The Connection's Picture Element */
+
+.AConnectionRimg, .aConnection img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 18px;
+    margin-right: 16.5px;
+    /* background-color: purple; */
+}
+
+.connectionUnit {
+    display: flex;
+    align-items: center;
+    /* display: flex; */
+
+}
+
+/* Accept/Reject Request buttons */
+
+.request {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accept, .reject {
+    height: 26.5px;
+    justify-self: flex-end;
+}
+
+.accept {
+    margin-right: 2px;
+}
+
+.reject {
+    margin-right: 10px;
+}
+
+/* Connection Requests Card */
+
+.connectionCards-header-requestCount {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(181, 191, 224);
+    border-radius: 50%;
+}
+
+.connectionCards-header p {
+    color: rgb(36, 37, 37);
+    position: relative;
+    top: 7px;
+    left: 10.5px;
+}
+
+h3 {
+    color: honeydew;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Your Connections Card */
+
+.connectionCards-header-connectionsCount {
+    height: 30px;
+    width: 60px;
+    background-color: rgb(181, 191, 224);
+    border-radius: 50%;
+}
+
+.connectionCards-header-connectionsCount p {
+    color: rgb(36, 37, 37);
+    position: relative;
+    top: 6px;
+    left: 13.5px;
+}
+
+
+/* Your Connections Card FOOTER */
+
+.yourConnectionsCard-footer {
+    margin-top: 0;
+    padding-left: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 3px solid grey;
+}
+
+.yourConnectionsCard-footer > span {
+    color: navy;
+    text-decoration: underline;
+}
