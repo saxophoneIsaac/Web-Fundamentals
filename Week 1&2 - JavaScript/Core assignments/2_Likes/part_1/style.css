@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    /* outline: 3px solid coral;r */
+}
+
+.container {
+    width: 1200px;
+    margin: 20px auto;
+    display: flex;
+}
+
+
+/* Columns */
+
+.col-1, .col-2 {
+    border: 3px solid grey;
+    height: 400px;
+}
+
+.col-1 {
+    flex: 2;
+}
+
+.col-2 {
+    flex: 1;
+}
+
+/* User Card */
+
+.userCard {
+    width: 500px;
+    border: 5px solid black;
+    padding: 20px;
+}
+
+.topSection {
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-between;
+    outline: cadetblue;
+    margin-bottom: 30px;
+}
+
+.topSection h2 {
+    align-self: center;
+}
+
+.btn-like {
+    margin-left: 50px;
+}
+
+#likeCounter {
+    font-weight: bold;
+}
+
+.btn-like {
+    font-size: 10.75pt;
+    font-weight: bold;
+    height: 45px;
+    width: 100px;
+    color: black;
+    background-color: rgb(121, 214, 121);
+    border: 2px solid rgb(38, 47, 56);
+    box-shadow: 4px 4px black;
+    align-self: center;
+}
