@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topBar">
+        <div class="navigationPane">
+
+            <div class="navigationPane-left">
+                <h1>Dojonary</h1>
+            </div>
+
+            <input class="searchBar" type="text" placeholder="Search...">
+
+            <button onclick="logInOut(this)" class="btn-signInOut">Log In</button>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <div class="definitionCard" id="ninja">
+
+                    <div class="definitionCard-left">
+                        <h2>ninja</h2>
+                        <span><em>noun</em></span>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button onclick="alert('ninja was liked')" class="btn-like" type="button">13 likes</button>
+                    </div>
+
+                    <span class="definitionCard-right">
+                        <p>A person trained in ancient <a href="https://en.wikipedia.org/wiki/Japan">Japanese</a> martial arts and employed especially for deceit, espionage, and assassinations.</p>
+                    </span>
+
+                </div>
+
+                <div class="definitionCard" id="ninjutsu">
+
+                    <div class="definitionCard-left">
+                        <h2>ninjutsu</h2>
+                        <span><em>noun</em></span>
+                        <p>Plural: <em>none</em></p>
+                        <button onclick="alert('ninjutsu was liked')" class="btn-like" type="button">13 likes</button>
+                    </div>
+
+                    <span class="definitionCard-right">
+                        <p>The strategy and tactics of unconecntional warfare, guerrila warfare, and espionage practiced by the ninja.  Naturally, ninjutsu is not centralized like the modernized martial arts schools (i.e. judo or karate).</p>
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-2">
+
+                <div class="addDefinitionCard">
+                    <h3>Dojonary is defined by <strong>YOU</strong></h3>
+
+                    <button class="btn-addDefinition" onclick="this.remove()">Add Definition</button>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    /* outline: 3px solid coral; */
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation Pane */
+
+.topBar, .navigationPane {
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.topBar {
+    width: 100%;
+    background-color: rgba(49, 50, 61, 0.26);
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.navigationPane {
+    width: 1200px;
+    padding: 0 25px;
+    background-color: rgba(124, 160, 214, 0.438);
+    justify-content: space-between;
+}
+
+/* Page Title */
+
+.navigationPane h1 {
+    color: black;
+    font-size: 30pt;
+    margin-right: 14px;
+}
+
+/* Search Bar */
+
+.searchBar {
+    height: 28px;
+    width: 360px;
+    font-size: 12pt;
+    padding-left: 10px;
+    outline: 3px solid black;
+}
+
+/* Button */
+
+.btn-signInOut {
+    font-size: 10.75pt;
+    height: 35px;
+    width: 100px;
+    color: white;
+    background-color: rgb(15, 77, 168);
+    border: 2px solid rgb(38, 47, 56);
+    box-shadow: 4px 4px black;
+}
+
+/* Columns */
+
+.row {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+}
+
+.col-1, .col-2 {
+}
+
+.col-1 {
+    flex: 2;
+}
+
+.col-2 {
+    flex: 1;
+    height: 400px;
+}
+
+/* Definition Cards */
+
+.definitionCard {
+    border: 3px solid black;
+    padding-top: 30px;
+    padding-bottom: 28px;
+    margin-bottom: 24px;
+    display: flex;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.definitionCard-left {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.definitionCard-left h2 {
+    font-size: 27.5pt;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.definitionCard-left span {
+    font-size: 14pt;
+    margin-bottom: 5px;
+}
+
+.definitionCard-left p {
+    font-size: 11pt;
+    margin-bottom: 22px;
+}
+
+.btn-like {
+    height: 36px;
+    width: 120px;
+    color: rgb(10, 25, 39);
+    background-color: rgb(235, 245, 151);
+    font-size: 10.5pt;
+    font-weight: bold;
+    border: 3px solid rgb(13, 53, 90);
+    border-radius: 30px;
+}
+
+
+.definitionCard-right {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 14.5;
+}
+
+/* Add Definition Card */
+
+.addDefinitionCard {
+    padding: 0 18px;
+    padding-top: 18px;
+    padding-bottom: 22px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.addDefinitionCard h3 {
+    font-weight: normal;
+    font-size: 24pt;
+    margin-bottom: 16px;
+}
+
+.btn-addDefinition {
+    font-size: 10.75pt;
+    font-weight: bold;
+    height: 45px;
+    width: 200px;
+    color: black;
+    background-color: rgb(121, 214, 121);
+    border: 2px solid rgb(38, 47, 56);
+    box-shadow: 4px 4px black;
+    align-self: center;
+}

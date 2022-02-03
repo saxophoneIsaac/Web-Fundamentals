@@ -24,7 +24,7 @@
 }
 
 .navigationPane {
-    width: 1000px;
+    width: 1200px;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -46,6 +46,8 @@ ul {
     display: flex;
     align-items: center;
     list-style: none;
+    position: relative;
+    top: 2px;
 }
 
 .navLinks li {
