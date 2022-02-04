@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes Part 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topBar">
+        <div class="navigationPane">
+
+            <div class="navigationPane-left">
+                <h1>Likes Assignment Part 2</h1>
+            </div>
+
+        </div>
+    </header>
+
+
+    <div class="container">
+        <h2 id="pageTitle">Your Feed</h2>
+        <div class="row">
+            <div class="col-1">
+                <div class="profileCard">
+                    <span class="circle">
+                        <img src="./profile_icon.png" alt="">
+                    </span>
+                    <span class="addAvatar">Add an avatar</span>
+                    <h3>Isaac Kim</h3>
+                </div>
+            </div>
+            <div class="col-2">
+
+                <div class="userCard">
+                    <div class="topSection">
+                        <h2>Mark H</h2>
+                        <div class="topSection-likes">
+                            <span id="likeCounter-1">3 likes</span>
+                            <button class="btn-like" onclick="likeIncrease1()">Like</button>
+                        </div>
+                    </div>
+                    <p>
+                        This is some filler text, it can say anything we like
+                    </p>
+                </div>
+
+                <div class="userCard">
+                    <div class="topSection">
+                        <h2>Erika T</h2>
+                        <div class="topSection-likes">
+                            <span id="likeCounter-2">12 likes</span>
+                            <button class="btn-like" onclick="likeIncrease2()">Like</button>
+                        </div>
+                    </div>
+                    <p>
+                        This is some filler text, it can say anything we like
+                    </p>
+                </div>
+
+                <div class="userCard">
+                    <div class="topSection">
+                        <h2>Valentin H</h2>
+                        <div class="topSection-likes">
+                            <span id="likeCounter-3">9 likes</span>
+                            <button class="btn-like" onclick="likeIncrease3()">Like</button>
+                        </div>
+                    </div>
+                    <p>
+                        This is some filler text, it can say anything we like
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

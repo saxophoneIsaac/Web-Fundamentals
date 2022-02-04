@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    /* outline: 3px solid coral; */
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation Pane */
+
+.topBar {
+    height: 75px;
+    width: 100%;
+    background-color: rgb(49, 50, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationPane {
+    width: 1200px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+/* Left Section */
+
+.navigationPane-left {
+    display: flex;
+    color: honeydew;
+}
+
+.navigationPane-left h1 {
+    font-size: 26pt;
+    font-weight: normal;
+    margin-right: 14px;
+}
+
+.active {
+    color: rgb(123, 199, 123);
+}
+
+/* Main Title */
+
+#pageTitle {
+    font-size: 28pt;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Columns */
+
+.row {
+    display: flex;
+    gap: 30px;
+}
+
+.col-1, .col-2 {
+    /* border: 3px solid grey; */
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 3;
+    gap: 20px;
+}
+
+
+/* Profile Card */
+
+.profileCard {
+    height: auto;
+    border: 3.5px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 33px;
+    padding-bottom: 30px;
+}
+
+.circle {
+    background-color: rgb(108, 205, 243);
+    border-radius: 50%;
+}
+
+.profileCard img {
+    position: relative;
+    left: 2.4px;
+    height: 110px;
+    width: 110px;
+}
+
+.addAvatar{
+    font-size: 22px;
+    text-decoration: underline;
+    color: navy;
+    margin-top: 34px;
+}
+
+.profileCard h3 {
+    font-size: 30pt;
+    font-weight: normal;
+    margin-top: 24px;
+}
+
+
+
+/* User Card */
+
+.userCard {
+    width: auto;
+    border: 5px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.topSection {
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-between;
+    outline: cadetblue;
+    margin-bottom: 30px;
+}
+
+.topSection h2 {
+    font-size: 25pt;
+    font-weight: normal;
+    align-self: center;
+}
+
+#likeCounter {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.btn-like {
+    font-size: 10.75pt;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    margin-left: 50px;
+    color: white;
+    background-color: rgb(68, 85, 160);
+    border: 3px solid black;
+    box-shadow: 6px 6px black;
+    align-self: center;
+}
+
